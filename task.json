@@ -1,8 +1,7 @@
 {
-  "name":"Mael Task",
-  "description":"https://raw.githubusercontent.com/MaelWeb/Script_X/main/task.json",
+  "name": "Mael Task",
+  "description": "https://raw.githubusercontent.com/MaelWeb/Script_X/main/task.json",
   "task": [
-    // 进入微信小程序直接签到
-    "10 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/pagoda/pagoda.js, tag=百果园, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/pagoda.png, enabled=false"
+    "10 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/pagoda/pagoda.js, tag=百果园, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/pagoda.png, enabled=false"
   ]
 }
