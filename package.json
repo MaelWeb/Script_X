@@ -2,6 +2,7 @@
   "name": "script_x",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "syncTask.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.7.2",
+    "jsonrepair": "^3.8.0",
     "node-fetch": "^3.3.2"
   }
 }

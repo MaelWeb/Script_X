@@ -2,12 +2,13 @@
  * @Author: Mael mael.liang@live.com
  * @Date: 2024-06-01 10:27:37
  * @LastEditors: Mael mael.liang@live.com
- * @LastEditTime: 2024-06-01 10:59:38
+ * @LastEditTime: 2024-06-01 11:55:55
  * @FilePath: /WorkSpace/Script_X/syncTask.js
  * @Description:
  */
-const fetch = require("node-fetch");
-const fs = require("fs");
+import axios from "axios";
+import { jsonrepair } from "jsonrepair";
+import fs from "fs";
 
 const urls = [
   "https://raw.githubusercontent.com/NobyDa/Script/master/NobyDa_BoxJs.json",
@@ -15,15 +16,31 @@ const urls = [
 ];
 
 const localJsonFilePath = "QX_Gallery.json"; // 本地 JSON 文件路径
-const mergedJsonFilePath = "merged_tasks.json";
+
+// async function fetchJsonFile(url) {
+//   const response = await fetch(url);
+//   console.log("🔥 ~ fetchJsonFile ~ response:",url, response);
+//   if (!response.ok) {
+//     throw new Error(`Failed to fetch ${url}: ${response.statusText}`);
+//   }
+//   const data = await response.json();
+//   return data;
+// }
 
 async function fetchJsonFile(url) {
-  const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error(`Failed to fetch ${url}: ${response.statusText}`);
+  try {
+    const response = await axios.get(url);
+    let data = response.data;
+
+    // 处理返回的数据是字符串形式的 JSON
+    if (typeof data === "string") {
+      data = JSON.parse(jsonrepair(data));
+    }
+
+    return data;
+  } catch (error) {
+    throw new Error(`Failed to fetch ${url}: ${error.message}`);
   }
-  const data = await response.json();
-  return data;
 }
 
 async function mergeJsonFiles() {
@@ -33,12 +50,12 @@ async function mergeJsonFiles() {
     "author": "@ZeroLia",
     "icon": "https://avatars.githubusercontent.com/u/7869311",
     "repo": "https://github.com/MaelWeb/Script_X/main",
-    "task": []
+    "task": [],
   };
 
+  let localData = {};
   if (fs.existsSync(localJsonFilePath)) {
-    const mergedData = JSON.parse(fs.readFileSync(localJsonFilePath, "utf-8"));
-    mergedData.task.push(...localData.task);
+    localData = JSON.parse(fs.readFileSync(localJsonFilePath, "utf-8"));
   }
 
   // 合并远程 JSON 文件
@@ -47,28 +64,23 @@ async function mergeJsonFiles() {
       const data = await fetchJsonFile(url);
       mergedData.task.push(...data.task);
     } catch (error) {
-      console.error(error);
+      console.error("🔥 ~ mergeJsonFiles ~ error:", url, error);
     }
   }
 
-  // 合并本地 JSON 文件
-  if (fs.existsSync(localJsonFilePath)) {
-    const localData = JSON.parse(fs.readFileSync(localJsonFilePath, "utf-8"));
-    mergedData = {
-      ...mergedData,
-      ...localData,
-      task: mergedData.task.push(...localData.task)
-    }
-  }
+
+  mergedData = {
+    ...mergedData,
+    ...localData,
+    task: [...mergedData.task, ...localData.task],
+  };
+
 
   // 写入合并后的 JSON 文件
-  fs.writeFileSync(mergedJsonFilePath, JSON.stringify(mergedData, null, 2));
+  fs.writeFileSync(localJsonFilePath, JSON.stringify(mergedData, null, 2));
 }
 
 mergeJsonFiles()
-  .then(() => {
-    console.log("JSON files merged successfully.");
-  })
   .catch((err) => {
     console.error("Error merging JSON files:", err);
   });
