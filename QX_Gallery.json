@@ -185,9 +185,6 @@
       "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/bilibili.conf, tag=b站签到获取token"
     },
     {
-      "config": "0 8 * * * https://raw.githubusercontent.com/NobyDa/Script/master/Bahamut/BahamutDailyBonus.js, tag=巴哈姆特签到, img-url=https://raw.githubusercontent.com/NobyDa/mini/master/Color/bahamutGame.png, enabled=true"
-    },
-    {
       "config": "35 8 * * * https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/xmlySign.js, tag=喜马拉雅签到任务, img-url=https://raw.githubusercontent.com/HuiDoY/Icon/main/mini/Color/ximalaya.png, enabled=true",
       "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/xmly.conf, tag=喜马拉雅签到cookie, update-interval=172800, opt-parser=false, enabled=true"
     },
@@ -211,10 +208,6 @@
     {
       "config": "15 10 * * * https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/ThomasCook.js, tag=托迈酷客,img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Tmkk.png,enabled=true",
       "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/tmkk.conf, tag=托迈酷客获取token"
-    },
-    {
-      "config": "0 9 * * * https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js, tag=爱奇艺签到,img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Iqiyi.png,enabled=true",
-      "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/iqiyi.conf, tag=爱奇艺获取token"
     },
     {
       "config": "24 8 * * * https://gist.githubusercontent.com/Sliverkiss/50a2046b37e01bb8f10ab0420d6f2a91/raw/dmzj.js, tag=动漫之家日常任务,img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Dmzj.png,enabled=true"
@@ -249,9 +242,6 @@
     {
       "config": "0 10 * * * https://raw.githubusercontent.com/leiyiyan/resource/main/script/netease_musician/task.js, tag=网易云音乐人, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/wyyyy.png, enabled=true",
       "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/netease_musician.conf, tag=网易云音乐人获取token"
-    },
-    {
-      "config": "0 2 * * * https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js, tag=Sub-Store, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/SubStore.png, enabled=true"
     },
     {
       "config": "18 8 8 * * * https://gist.githubusercontent.com/Sliverkiss/4703f7114ad352e97dcd5eaa4dc3e2f5/raw/bgps.js, tag=比格披萨自助签到, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/bgps.png, enabled=true",

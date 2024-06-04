@@ -2,7 +2,7 @@
  * @Author: Mael mael.liang@live.com
  * @Date: 2024-06-01 10:27:37
  * @LastEditors: edenliang edenliang@tencent.com
- * @LastEditTime: 2024-06-04 16:47:44
+ * @LastEditTime: 2024-06-04 17:07:57
  * @FilePath: /WorkSpace/Script_X/syncTask.js
  * @Description:
  */
@@ -43,6 +43,23 @@ async function fetchJsonFile(url) {
   }
 }
 
+function removeDuplicates(array) {
+  const seen = {};
+  return array.filter((item) => {
+    // 从 config 字符串中提取 URL
+    const urlMatch = item.config.match(/https?:\/\/[^ ]+/);
+    const url = urlMatch ? urlMatch[0] : null;
+
+    if (url && !seen[url]) {
+      // 如果 URL 还没有出现过，则保留这个项目
+      seen[url] = true;
+      return true;
+    }
+    // 如果 URL 已经出现过，过滤掉这个项目
+    return false;
+  });
+}
+
 async function mergeJsonFiles() {
   let mergedData = {
     "name": "ZeroLia 任务集合",
@@ -71,7 +88,7 @@ async function mergeJsonFiles() {
   mergedData = {
     ...mergedData,
     ...myGallery,
-    task: [...mergedData.task, ...myGallery.task],
+    task: removeDuplicates([...mergedData.task, ...myGallery.task]),
   };
 
   // 写入合并后的 JSON 文件
