@@ -1,8 +1,8 @@
 /*
  * @Author: Mael mael.liang@live.com
  * @Date: 2024-06-01 10:27:37
- * @LastEditors: Mael mael.liang@live.com
- * @LastEditTime: 2024-06-01 11:55:55
+ * @LastEditors: edenliang edenliang@tencent.com
+ * @LastEditTime: 2024-06-04 16:47:44
  * @FilePath: /WorkSpace/Script_X/syncTask.js
  * @Description:
  */
@@ -15,7 +15,7 @@ const urls = [
   "https://gist.githubusercontent.com/Sliverkiss/a7496bd073820942b44a9b36874aaf4c/raw/sliverkiss.gallery.json",
 ];
 
-const localJsonFilePath = "QX_Gallery.json"; // 本地 JSON 文件路径
+const localJsonFilePath = "My_Gallery.json"; // 本地 JSON 文件路径
 
 // async function fetchJsonFile(url) {
 //   const response = await fetch(url);
@@ -53,9 +53,9 @@ async function mergeJsonFiles() {
     "task": [],
   };
 
-  let localData = {};
+  let myGallery = {};
   if (fs.existsSync(localJsonFilePath)) {
-    localData = JSON.parse(fs.readFileSync(localJsonFilePath, "utf-8"));
+    myGallery = JSON.parse(fs.readFileSync(localJsonFilePath, "utf-8"));
   }
 
   // 合并远程 JSON 文件
@@ -68,19 +68,16 @@ async function mergeJsonFiles() {
     }
   }
 
-
   mergedData = {
     ...mergedData,
-    ...localData,
-    task: [...mergedData.task, ...localData.task],
+    ...myGallery,
+    task: [...mergedData.task, ...myGallery.task],
   };
 
-
   // 写入合并后的 JSON 文件
-  fs.writeFileSync(localJsonFilePath, JSON.stringify(mergedData, null, 2));
+  fs.writeFileSync("QX_Gallery.json", JSON.stringify(mergedData, null, 2));
 }
 
-mergeJsonFiles()
-  .catch((err) => {
-    console.error("Error merging JSON files:", err);
-  });
+mergeJsonFiles().catch((err) => {
+  console.error("Error merging JSON files:", err);
+});
