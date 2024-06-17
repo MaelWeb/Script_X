@@ -314,10 +314,6 @@
       "config": "6 9 * * * https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/moyu.js, tag=摸鱼来啦, img-url=https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/67/04/ff/6704ff4c-b49b-de91-70ac-201c62d5296f/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144bb.png, enabled=true"
     },
     {
-      "config": "20 7 * * * https://raw.githubusercontent.com/WowYiJiu/Personal/main/Script/burning.js, tag=超燃汇, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/crh.png, enabled=true",
-      "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/burning.conf, tag=超燃汇获取token"
-    },
-    {
       "config": "25 7 * * * https://raw.githubusercontent.com/GoodHolidays/Scripts/master/Task/weibo.js, tag=微博签到, img-url=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/apps/Weibo-00.png, enabled=true",
       "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/weibo1.conf, tag=微博签到获取token"
     },
@@ -360,16 +356,16 @@
       "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/hgds.conf, tag=哈根达斯获取token"
     },
     {
-      "config": "25 7-12/1 * * * https://raw.githubusercontent.com/WowYiJiu/Personal/main/Script/qqMusic.js, tag=QQ音乐, img-url=https://raw.githubusercontent.com/WowYiJiu/Personal/main/icon/Color/qqMusic.png, enabled=true",
-      "addons": "https://raw.githubusercontent.com/WowYiJiu/Personal/main/rewrite/get_qqMusic_cookie.conf, tag=QQ音乐, update-interval=172800, opt-parser=false, enabled=false"
-    },
-    {
       "config": "30 10 * * * https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js, tag=奈雪的茶, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/naixue.png, enabled=true",
       "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/naixue.conf, tag=奈雪的茶获取token"
     },
     {
       "config": "19 0 * * * https://gist.githubusercontent.com/Sliverkiss/48154e5277d87f9810d6b13b2b98f12a/raw/kbj.js, tag=康佰家, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/Kbj.png, enabled=true",
       "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/kbj.conf, tag=康佰家获取token"
+    },
+    {
+      "config": "11 6 * * * https://raw.githubusercontent.com/wf021325/qx/main/task/volvo.js, tag=沃尔沃汽车, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/volvo.png, enabled=true",
+      "addons": "https://raw.githubusercontent.com/wf021325/qx/main/task/volvo.js, tag=沃尔沃汽车获取token, opt-parser=true"
     },
     {
       "config": "12 0 * * * https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/xwy.js, tag=希望云社区, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/xwy.png, enabled=true",
