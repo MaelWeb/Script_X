@@ -372,6 +372,50 @@
       "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/xwy.conf, tag=希望云社区获取token"
     },
     {
+      "config": "12 6 * * * https://raw.githubusercontent.com/wf021325/qx/main/task/ffqc.js, tag=飞凡汽车, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/ffqc.png, enabled=true",
+      "addons": "https://raw.githubusercontent.com/wf021325/qx/main/task/ffqc.js, tag=飞凡汽车获取token, opt-parser=true"
+    },
+    {
+      "config": "13 6 * * * https://raw.githubusercontent.com/WowYiJiu/Personal/main/Script/tenvideo.js, tag=腾讯视频签到, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/txsp.png, enabled=true",
+      "addons": "https://raw.githubusercontent.com/WowYiJiu/Personal/main/Script/tenvideo.js, tag=腾讯视频获取token, opt-parser=true"
+    },
+    {
+      "config": "0 6 * * * https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/javbus.js, tag=巴士论坛签到, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/bus.png, enabled=true",
+      "addons": "https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/javbus.js, tag=巴士论坛获取token, opt-parser=true"
+    },
+    {
+      "config": "0 6 * * * https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/HaiTian/HaiTian.js, tag=海天美味馆, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/htmwg.png, enabled=true",
+      "addons": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/HaiTian/HaiTian.sgmodule, tag=海天美味馆获取token, opt-parser=true"
+    },
+    {
+      "config": "0 6 * * * https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/ZTE/ZTE.js, tag=中兴手机商城, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/zte.png, enabled=true",
+      "addons": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/ZTE/ZTE.sgmodule, tag=中兴获取token, opt-parser=true"
+    },
+    {
+      "config": "0 6 * * * https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/ZTE/ZTE_Community.js, tag=中兴社区, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/zte.png, enabled=true",
+      "addons": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/ZTE/ZTE.sgmodule, tag=中兴获取token, opt-parser=true"
+    },
+    {
+      "config": "0 6 * * * https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/Cheryfs/Cheryfs.js, tag=好奇车生活, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/Cheryl%E2%80%99s.png, enabled=true",
+      "addons": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/Cheryfs/Cheryfs.sgmodule, tag=好奇车生活获取token, opt-parser=true"
+    },
+    {
+      "config": "0 6 * * * https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RedBull/RedBull.js, tag=红牛会员俱乐部, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/redbull.png, enabled=true",
+      "addons": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RedBull/RedBull.sgmodule, tag=红牛会员俱乐部获取token, opt-parser=true"
+    },
+    {
+      "config": "0 6 * * * https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/PSKJ/PSKJ.js, tag=攀升科技+, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/pskj.png, enabled=true",
+      "addons": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/PSKJ/PSKJ.sgmodule, tag=攀升科技+获取token, opt-parser=true"
+    },
+    {
+      "config": "0 6 * * * https://gist.githubusercontent.com/Sliverkiss/3e1fe82fa18dbcff9b2ae7fdad7596a6/raw/ppmt.js, tag=泡泡玛特, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/ppmt.png, enabled=true",
+      "addons": "https://gist.githubusercontent.com/Sliverkiss/3e1fe82fa18dbcff9b2ae7fdad7596a6/raw/ppmt.js, tag=泡泡玛特获取token, opt-parser=true"
+    },
+    {
+      "config": "0 6 * * * https://gist.githubusercontent.com/Sliverkiss/b9eaf7c8d98df06087851c3e1d5040cf/raw/lenovo.js, tag=联想赚金豆, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/lenovo.png, enabled=true",
+      "addons": "https://gist.githubusercontent.com/Sliverkiss/b9eaf7c8d98df06087851c3e1d5040cf/raw/lenovo.js, tag=联想赚金豆获取token, opt-parser=true"
+    },
+    {
       "config": "30 8 * * * https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, tag=奶茶多合一, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/teaMilk.png",
       "addons": "https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, tag=奶茶多合一(获取授权)"
     }
