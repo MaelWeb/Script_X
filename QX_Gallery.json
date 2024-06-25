@@ -357,7 +357,7 @@
     },
     {
       "config": "30 10 * * * https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js, tag=奈雪的茶, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/naixue.png, enabled=true",
-      "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/naixue.conf, tag=奈雪的茶获取token"
+      "addons": "https://gist.githubusercontent.com/Sliverkiss/4d0e9572b99530b7cb0e7298622aa2a9/raw/naixue.js, tag=奈雪的茶获取token, opt-parser=true"
     },
     {
       "config": "19 0 * * * https://gist.githubusercontent.com/Sliverkiss/48154e5277d87f9810d6b13b2b98f12a/raw/kbj.js, tag=康佰家, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/Kbj.png, enabled=true",
