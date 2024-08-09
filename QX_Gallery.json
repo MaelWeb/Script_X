@@ -33,6 +33,10 @@
       "config": "0 8 * * * https://raw.githubusercontent.com/NobyDa/Script/master/Bahamut/BahamutDailyBonus.js, tag=巴哈姆特签到, img-url=https://raw.githubusercontent.com/NobyDa/mini/master/Color/bahamutGame.png"
     },
     {
+      "config": "30 10 * * * https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, tag=奶茶多合一, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/teaMilk.png, enabled=true",
+      "addons": "https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, tag=奶茶多合一获取token, opt-parser=true"
+    },
+    {
       "config": "30 8 * * * https://gist.githubusercontent.com/Sliverkiss/585daf69a0a6c7243db8993f5394a124/raw/youzan.js, tag=Sakura Checkbox, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Checkbox.png, enabled=true",
       "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/youzan.conf, tag=Sakura Checkbox获取token"
     },
@@ -84,10 +88,6 @@
       "config": "30 10 * * * https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/macat.js, tag=macat签到, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/Skicat.png, enabled=false"
     },
     {
-      "config": "0 10 * * * https://gist.githubusercontent.com/Sliverkiss/4984f7f34d6df8bcdd1e13ecac4bba51/raw/bwcj.js, tag=霸王茶姬小程序签到, img-url=https://raw.githubusercontent.com/Guding88/Script/main/bawangchaji/bwcj.png, enabled=false",
-      "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/bwcj.conf, tag=霸王茶姬获取token"
-    },
-    {
       "config": "40 8 * * * https://raw.githubusercontent.com/Crazy-Z7/Task/main/Tuhyche.js, tag=途虎养车积分签到, img-url=https://raw.githubusercontent.com/Crazy-Z7/Task/main/Image/IMG_0905.jpeg, enabled=false",
       "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/thyc.conf, tag=途虎获取token"
     },
@@ -110,10 +110,6 @@
     {
       "config": "30 0 6 * * * https://raw.githubusercontent.com/Raphael689/RW/master/Scripts/yqslhy.js, tag=元气森林会员中心,img-url=https://raw.githubusercontent.com/Raphael689/RW/master/iCons/yqsl.png, enabled=false",
       "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/yqsl.conf, tag=元气森林会员中心获取token"
-    },
-    {
-      "config": "21 0 5 * * * https://gist.githubusercontent.com/Sliverkiss/e427dc3164d0c008f8d282f180d7fc00/raw/hsay.js, tag=沪上阿姨小程序签到,img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Hsay.png, enabled=false",
-      "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/hsay.conf, tag=沪上阿姨获取token"
     },
     {
       "config": "21 0 0 * * * https://gist.githubusercontent.com/Sliverkiss/4e0081f7b18a2cea9dbdf13545e60885/raw/d53857028ced29aed98affb5d4a602b2a8bf94cf/hldc.js, tag=哈啰单车奖励金签到,img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/Hldc.png, enabled=false",
@@ -318,10 +314,6 @@
       "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/weibo1.conf, tag=微博签到获取token"
     },
     {
-      "config": "38 8 * * * https://gist.githubusercontent.com/Sliverkiss/df5dbbf01bc3acc3bccaf7880acd242b/raw/yht.js, tag=益禾堂签到, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/yht.png, enabled=true",
-      "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/yht.conf, tag=益禾堂获取token"
-    },
-    {
       "config": "51 8 * * * https://raw.githubusercontent.com/leiyiyan/resource/main/script/lhtj/lhtj.js, tag=龙湖天街签到, img-url=https://raw.githubusercontent.com/leiyiyan/resource/main/icons/lhtj.png, enabled=true",
       "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/lhtj.conf, tag=龙湖天街获取token"
     },
@@ -494,6 +486,21 @@
       "config": "20 9,15,21 * * * https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/WangChao/WangChao.js, tag=望潮, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/wamgchao.png, enabled=true"
     },
     {
+      "config": "20 9,19 * * * https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/LanJingLing/LanJingLing.js, tag=兰精灵, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/ljl.png, enabled=true"
+    },
+    {
+      "config": "10 10,16 * * * https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/RongPanAn/RongPanAn.js, tag=融磐安, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/rpa.png, enabled=true"
+    },
+    {
+      "config": "10,30 9 * * * https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/ZSJD/ZSJD.js, tag=掌上金东, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/zsjd.png, enabled=true"
+    },
+    {
+      "config": "1,10 8,16 * * * https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/AiLuQiao/AiLuQiao.js, tag=爱路桥, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/alq.png, enabled=true"
+    },
+    {
+      "config": "30 30,35,40 9 * * * https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/DaChao/DaChao.js, tag=大潮, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/dachao.png, enabled=true"
+    },
+    {
       "config": "6 8,14,20 * * * https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/XiShiYan/XiShiYan.js, tag=西施眼, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/xsy.png, enabled=true"
     },
     {
@@ -503,10 +510,6 @@
     {
       "config": "11 11,18 * * * https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/MSWEFLS/MSWEFLS.js, tag=麦斯威尔福利社, img-url=https://raw.githubusercontent.com/Xhy333/QuantumultX/main/icon/Mswer.png, enabled=true",
       "addons": "https://raw.githubusercontent.com/xzxxn777/Surge/main/Script/MSWEFLS/MSWEFLS.sgmodule, tag=麦斯威尔福利社获取token, opt-parser=true"
-    },
-    {
-      "config": "30 8 * * * https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, tag=奶茶多合一, img-url=https://raw.githubusercontent.com/Sliverkiss/QuantumultX/main/icon/teaMilk.png",
-      "addons": "https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, tag=奶茶多合一(获取授权)"
     }
   ]
 }
