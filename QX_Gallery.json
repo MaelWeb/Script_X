@@ -297,7 +297,7 @@
     },
     {
       "config": "8 0 * * * https://gist.githubusercontent.com/Sliverkiss/6d15658e313eee254a55d2b97933587c/raw/jsb.js, tag=杰士邦安心福利社, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/jsb.png, enabled=true",
-      "addons": "https://gist.githubusercontent.com/Sliverkiss/b564306f40741c8d549409fbe6c2aae9/raw/jsb.conf, tag=杰士邦安心福利社获取token"
+      "addons": "https://gist.githubusercontent.com/Sliverkiss/6d15658e313eee254a55d2b97933587c/raw/jsb.js, tag=杰士邦安心福利社获取token, opt-parser=true"
     },
     {
       "config": "8 0 * * * https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/pp_parking.js, tag=PP停车, img-url=https://raw.githubusercontent.com/sliverkiss/QuantumultX/main/icon/pp_parking.png, enabled=true",
